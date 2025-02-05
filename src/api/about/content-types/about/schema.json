@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,10 +14,24 @@
   "attributes": {
     "heading": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "Welcome, Bold Bakers! Read our story of bakery-ness"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "body": {
-      "type": "blocks",
+      "type": "richtext",
+      "required": true
+    },
+    "highlight": {
+      "type": "string",
+      "default": "bakery-ness",
       "required": true
     }
   }

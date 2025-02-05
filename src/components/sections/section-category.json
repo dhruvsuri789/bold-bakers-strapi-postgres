@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_section_categories",
+  "info": {
+    "displayName": "sectionCategory",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionCategory": {
+      "type": "enumeration",
+      "enum": [
+        "hero",
+        "recipeList",
+        "aboutSmall",
+        "featured"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_about_smalls",
+  "info": {
+    "displayName": "AboutSmall",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true,
+      "default": "Meet our bakers"
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "cta": {
+      "type": "string",
+      "required": true,
+      "default": "/about"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sectionCategory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.section-category",
+      "required": true
+    }
+  }
+}

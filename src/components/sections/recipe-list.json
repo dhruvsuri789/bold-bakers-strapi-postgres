@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_recipe_lists",
+  "info": {
+    "displayName": "RecipeList",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Top recipes",
+      "required": true
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    },
+    "cta": {
+      "type": "string",
+      "default": "/recipes"
+    },
+    "sectionCategory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.section-category",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_featureds",
+  "info": {
+    "displayName": "Featured",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true,
+      "default": "Featured on..."
+    },
+    "logoImages": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sectionCategory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.section-category",
+      "required": true
+    }
+  }
+}
